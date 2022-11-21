@@ -7,9 +7,9 @@ Chest CT에서의 인공지능 기반 자동 Body morphometry 측정
 
 ## 🔨Dev environment
 - [Python]() 3.9.x
-- [CUDA]() 11.x
-- [CuDNN]()
-- [Pytorch]()
+- [CUDA](https://developer.nvidia.com/cuda-toolkit) 11.x
+- [CuDNN](https://developer.nvidia.com/cudnn)
+- [Pytorch](https://pytorch.org/docs/stable/index.html)
 
 ## Team Convention
 ### Commit
