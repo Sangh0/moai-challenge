@@ -1,9 +1,9 @@
 ### preprocessing
 
-- convert dmc to png format [code](https://github.com/yujinkim1/moai-challenge/tree/develop/preprocessing/convert_dmc2png.py)
+- convert dcm to png format [code](https://github.com/yujinkim1/moai-challenge/tree/develop/preprocessing/dcm2png_converter.py)
 
 ```
-$ python3 convert_dmc2png.py --path ./dataset_dir/
+$ python3 dcm2png_converter.py --path ./dataset_dir/
 ```
 
 - visualize images and labels [code](https://github.com/yujinkim1/moai-challenge/tree/develop/preprocessing/visualize.py)
