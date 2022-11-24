@@ -15,8 +15,8 @@ $ python3 dcm2png_converter.py --original_path {dcm folder directory} --convert_
 from visualize import load_dataset, visualize
 
 Config = {
-    'path': {dataset directory}
-    'count': 'How many number of images will you see?'
+    'path': {dataset directory},
+    'count': 'How many number of images will you see?',
 }
 
 images, labels = load_dataset(Config['path'])
