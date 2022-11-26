@@ -73,3 +73,13 @@ Chest CT에서의 인공지능 기반 자동 Body morphometry 측정
 
 </div>
 </details>
+
+<details>
+<summary>2022.11.26.</summary>
+<div markdown="1">
+
+- `create` dataset
+- `remove` augment
+
+</div>
+</details>

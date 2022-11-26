@@ -1,7 +1,8 @@
 import random
 from typing import *
-from PIL import Image
-import torch 
+from PIL import Image, ImageEnhance
+import torch
+
 
 class RandomHorizontalFlip(object):
     def __init__(self, p: float=0.5):
@@ -18,6 +19,7 @@ class RandomHorizontalFlip(object):
                 lb = lb.transpose(Image.FLIP_LEFT_RIGHT),
             )
         
+
 class RandomRotate(object):
     def __init__(self, p=0.5):
         self.angle = random.randrange(1, 360)
@@ -34,11 +36,12 @@ class RandomRotate(object):
                 lb = lb.rotate(self.angle),
             )
         
+        
 class RandomScale(object):
     def __init__(self, scales: Tuple[int]):
         self.scales = scales
 
-    def __call__(self, im_lb: dict):
+    def __call__(self, im_lb):
         im = im_lb['im']
         lb = im_lb['lb']
         W, H = im.size
@@ -48,12 +51,12 @@ class RandomScale(object):
             im = im.resize((w, h), Image.BILINEAR),
             lb = lb.resize((w, h), Image.NEAREST),
         )
-
+    
 class RandomCrop(object):
     def __init__(self, size: Tuple[int]=(1., )):
         self.size = size
 
-    def __call__(self, im_lb: dict):
+    def __call__(self, im_lb):
         im = im_lb['im']
         lb = im_lb['lb']
         assert im.size == lb.size
@@ -73,6 +76,7 @@ class RandomCrop(object):
             lb = lb.crop(crop)
         )
     
+    
 class UnNormalize(object):
     def __init__(self, mean: Tuple[float], std: Tuple[float]):
         self.mean = mean
@@ -82,6 +86,7 @@ class UnNormalize(object):
         for t, m, s in zip(tensor, self.mean, self.std):
             t.mul_(s).add_(m)
         return tensor
+    
     
 class Compose(object):
     def __init__(self, do_list: list):
