@@ -1,4 +1,6 @@
-# moai-challenge
+# [moai-challenge](./moai_challenge.pdf)
+> 제목 링크를 통해 챌린지 수행 과정에 대한 구체적인 내용을 확인할 수 있습니다.
+
 Chest CT에서의 인공지능 기반 자동 Body morphometry 측정
 
 ## 🧑🏻‍💻Team members
