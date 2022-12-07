@@ -17,7 +17,7 @@ Chest CT에서의 인공지능 기반 자동 Body morphometry 측정에 대한 �
 > 링크를 통해 팀의 컨벤션을 확인할 수 있습니다.
 
 ## Architecture
-<img src="./.github/unet.png" width=600 height=350 />
+<img src="./.github/unet.png" width=792 height=479 />
 
 ## Prepare and activate environment on anaconda
 ```bash
