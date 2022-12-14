@@ -3,13 +3,13 @@
 
 Chest CT에서의 인공지능 기반 자동 Body morphometry 측정에 대한 구조를 포함하고 있습니다.
 
-## 🧑🏻‍💻Team members
+## Team members
 - sangho Kim | [[github]](https://github.com/sangh0)
 - yujin Kim | [[github]](https://github.com/yujinkim1)
 
-## 🔨Dev environment
-- [Python](https://www.python.org/downloads) 3.9.x
-- [CUDA](https://developer.nvidia.com/cuda-toolkit) 11.x
+## Requirements
+- [Python](https://www.python.org/downloads) 3.9 or above
+- [CUDA](https://developer.nvidia.com/cuda-toolkit)
 - [CuDNN](https://developer.nvidia.com/cudnn)
 - [Pytorch](https://pytorch.org/docs/stable/index.html)
 
@@ -17,6 +17,7 @@ Chest CT에서의 인공지능 기반 자동 Body morphometry 측정에 대한 �
 > 링크를 통해 팀의 컨벤션을 확인할 수 있습니다.
 
 ## Architecture
+### [U-Net(MICCAI 2015) Paper](https://arxiv.org/pdf/1505.04597.pdf)
 <img src="https://miro.medium.com/max/1200/1*qNdglJ1ORP3Gq77MmBLhHQ.png" />
 
 ## Prepare and activate environment on anaconda
